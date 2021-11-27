@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Servicios">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Servicios"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawVerticalTrack="true">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageS1"
+                        android:layout_width="115dp"
+                        android:layout_height="170dp"
+                        android:clickable="false"
+                        android:textStyle="bold"
+                        app:srcCompat="@drawable/reparaciones" />
+
+
+                    <TextView
+                        android:id="@+id/textServicios1"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Reparación de prendas"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageS2"
+                        android:layout_width="115dp"
+                        android:layout_height="170dp"
+                        app:srcCompat="@drawable/personzaliza" />
+
+                    <TextView
+                        android:id="@+id/textServicios2"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Personalización de chaquetas"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="378dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageS3"
+                        android:layout_width="115dp"
+                        android:layout_height="170dp"
+                        app:srcCompat="@drawable/diseno" />
+
+                    <TextView
+                        android:id="@+id/textServicios3"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Capacitación en diseño de chaquetas"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
